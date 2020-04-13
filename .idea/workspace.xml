@@ -10,12 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="50e7447a-109b-4a44-a78e-8a562bdef0a2" name="Default Changelist" comment="LAZY VERSION">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_googlecode_json_simple_json_simple_1_1_1_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/views/Verbs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/views/Words.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/shadowsintolight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verbs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_words.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_cardview_cardview_1_0_0_aar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/correct_dialog_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/help_just_arrived.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/image_correct.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sad_french.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/correct_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/help_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/loading_data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/wrong_dialog.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -28,13 +31,28 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/views/Verbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/views/Verbs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/views/Words.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/frenchverbs/views/Words.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bad_boy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bad_boy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_help.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_help.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_skip.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_skip.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/btn_submit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_submit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/correct_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/correct_score.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/help_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/help_score.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/image_bg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/image_bg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/input_edit_text.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/input_edit_text.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/score_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/score_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/the_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/the_score.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/wrong_score.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/wrong_score.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verbs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verbs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/tempooo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tempooo.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +81,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -77,7 +96,8 @@
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/font" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -91,6 +111,7 @@
       <recent name="com.example.frenchverbs.views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\karim\Desktop\Grades\Grades\Frenchverbs\app\src\main\res\drawable" />
       <recent name="C:\Users\karim\Desktop\Grades\Grades\Frenchverbs\app\src\main\res\font" />
     </key>
   </component>

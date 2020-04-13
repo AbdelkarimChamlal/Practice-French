@@ -44,7 +44,7 @@ public class Words extends AppCompatActivity {
             try {
                 OkHttpClient client = new OkHttpClient();
                 Request request = new Request.Builder()
-                    .url("http://192.168.43.174:8000/polls/word/")
+                    .url("http://192.168.1.40:8000/polls/word/")
                     .addHeader("Content-Type","text/html; charset=utf-8")
                     .build();
                 Response response = client.newCall(request).execute();

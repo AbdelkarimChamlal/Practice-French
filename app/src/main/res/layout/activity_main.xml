@@ -1,33 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
-    android:gravity="center"
+    android:hapticFeedbackEnabled="true"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bad_boy"
+        android:scaleType="centerCrop"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Button
-            android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:fontFamily="@font/shadowsintolight"
-            android:textColor="#6666ff"
-            android:layout_height="wrap_content"
-            android:text="Practice Words"
-            android:id="@+id/practice_words"/>
-        <Button
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:fontFamily="@font/shadowsintolight"
-            android:textColor="#6666ff"
-            android:layout_height="wrap_content"
-            android:text="Practice Verbs"
-            android:id="@+id/practice_verbs"/>
+            android:fontFamily="@font/indie_font"
+            android:gravity="center"
+            android:textColor="#cddd5fff"
+            android:text=""
+            android:textSize="42sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:id="@+id/verbs_layout"
+                android:background="@drawable/image_bg"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="9dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/french_verbs"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="Practice Verbs"
+                    android:fontFamily="@font/indie_font"
+                    android:textColor="#EFDFAF"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/image_bg"
+                android:clickable="true"
+                android:id="@+id/words_layout"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/mots"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="Practice Words"
+                    android:fontFamily="@font/indie_font"
+                    android:textColor="#cacaca"/>
+            </LinearLayout>
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_weight="1">-->
+
+<!--            </LinearLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/practice_words"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/shadowsintolight"-->
+<!--                android:text="Practice Words"-->
+<!--                android:textColor="#6666ff" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/practice_verbs"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:fontFamily="@font/shadowsintolight"-->
+<!--                android:text="Practice Verbs"-->
+<!--                android:textColor="#6666ff" />-->
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
