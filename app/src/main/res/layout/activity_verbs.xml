@@ -187,9 +187,12 @@
                     android:layout_width="300dp"
                     android:gravity="center"
                     android:id="@+id/answer"
+                    android:singleLine="true"
                     android:textColor="#3535aa"
+                    android:nextFocusForward="@id/meaning"
                     android:background="@drawable/input_edit_text"
                     android:layout_height="40dp"
+                    android:imeOptions="actionNext"
                     android:fontFamily="@font/shadowsintolight"
                     android:hint="ANSWER FOR QUESTION 1"/>
                 <LinearLayout
@@ -220,6 +223,9 @@
                     android:layout_width="300dp"
                     android:gravity="center"
                     android:id="@+id/meaning"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+
                     android:fontFamily="@font/shadowsintolight"
                     android:background="@drawable/input_edit_text"
                     android:layout_height="40dp"

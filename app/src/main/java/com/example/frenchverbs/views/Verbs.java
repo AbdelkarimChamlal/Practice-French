@@ -55,9 +55,9 @@ public class Verbs extends AppCompatActivity {
         correct=findViewById(R.id.correct_answers);
         wrong=findViewById(R.id.incorrect);
         askedForHelp=findViewById(R.id.asked_for_help);
+
         dg = new Dialog(this);
         dg.setContentView(R.layout.loading_data);
-
         help_dialog = new Dialog(this);
         help_dialog.setContentView(R.layout.help_dialog);
         help_dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
@@ -223,32 +223,25 @@ public class Verbs extends AppCompatActivity {
         });
         sendRequest.start();
     }
-//    @Override
-//    public void onWindowFocusChanged(boolean hasFocus) {
-//        super.onWindowFocusChanged(hasFocus);
-//        if (hasFocus) {
-//            hideSystemUI();
-//
-//        }
-//    }
-//    private void hideSystemUI() {
-//        View decorView = getWindow().getDecorView();
-//        decorView.setSystemUiVisibility(
-//            View.SYSTEM_UI_FLAG_IMMERSIVE
-//                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-//                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-//                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-//                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-//                | View.SYSTEM_UI_FLAG_FULLSCREEN
-//                | View.SYSTEM);
-//    }
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            hideSystemUI();
 
-    public void createDialog(){
-        Dialog dg = new Dialog(getApplicationContext());
-        dg.setContentView(R.layout.loading_data);
-        dg.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        dg.setCancelable(false);
-        dg.show();
+        }
     }
+    private void hideSystemUI() {
+        View decorView = getWindow().getDecorView();
+        decorView.setSystemUiVisibility(
+            View.SYSTEM_UI_FLAG_IMMERSIVE
+                | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
+
 }
 
